@@ -3,6 +3,9 @@
 Don't you know what to watch on Netflix, Disney+ or any streaming platform? <br/>
 My program will recommend something for you
 
+## Tech
+Database: `PostgreSQL` in docker
+
 ## Libraries
 - pandas
 - sqlalchemy
