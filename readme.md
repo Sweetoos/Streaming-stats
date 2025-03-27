@@ -3,19 +3,17 @@
 Don't you know what to watch on Netflix, Disney+ or any streaming platform? <br/>
 My program will recommend something for you
 
-## Tech
-Database: `PostgreSQL` in docker
-
 ## Libraries
+
+### Python (backend)
+- flask
 - pandas
 - sqlalchemy
 - kagglehub
-- sys
-
-in future
-
 - scikit-learn
-- frontend (flask or django, probably the first one)
+
+### TypeScript (frontend)
+- React
 
 
 I use OMDB api key, so I am limited to 1000 queries per day
