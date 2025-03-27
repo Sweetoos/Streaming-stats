@@ -3,8 +3,6 @@
 Don't you know what to watch on Netflix, Disney+ or any streaming platform? <br/>
 My program will recommend something for you
 
-For running this app you need to get a key from OMDb, because of the daily limit of 1 key usage
-
 ## Libraries
 
 ### Python (backend)
