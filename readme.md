@@ -3,16 +3,19 @@
 Don't you know what to watch on Netflix, Disney+ or any streaming platform? <br/>
 My program will recommend something for you
 
+For running this app you need to get a key from OMDb, because of the daily limit of 1 key usage
+
 ## Libraries
+
+### Python (backend)
+- flask
 - pandas
 - sqlalchemy
 - kagglehub
-- sys
-
-in future
-
 - scikit-learn
-- frontend (flask or django, probably the first one)
+
+### TypeScript (frontend)
+- React
 
 
 I use OMDB api key, so I am limited to 1000 queries per day

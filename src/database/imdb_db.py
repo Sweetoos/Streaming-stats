@@ -46,3 +46,26 @@ def fetch_video_data(title, api_key, content_type='movie'):
                 "type": content_type,
             }
     return None
+
+def fetch_episodes(series_title, api_key, seasons):
+    series=session.query(Video).filter_by(Video.title==series_title).first()
+    if not series:
+        print("Series not found")
+        return
+
+    for season in range(1, seasons+1):
+        url=f"http://www.omdbapi.com/?t={series_title}&Season={season}&apikey={api_key}"
+        response=requests.get(url)
+        if response.status_code==200:
+            data=response.json()
+            if "Title" not in data or "imdbRating" not in data:
+                break
+
+            episode_data=Episode(
+                    title=data["Title"],
+                    season=season,
+                    episode=episode,
+                    imdb_rating=float(data["imdbRating"]),
+                    series_id=series.id
+            )
+    session.commit()
